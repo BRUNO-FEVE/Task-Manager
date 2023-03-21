@@ -1,0 +1,114 @@
+.listaTarefas {
+    margin: 0 0 0 17px;
+    padding: 32px;
+
+    background-color: #001D3D;
+    color: #001D3D;
+
+    width: 336px;
+    height: 485px;
+    border-radius: 30px;
+
+    flex-wrap: wrap;
+
+    position: relative;
+    z-index: -2;
+
+    overflow: hidden;
+}
+
+.listaTarefas ul {
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    margin: 0 0 50px 0;
+}
+
+.item {
+    background-color: #A7C957;
+
+    width: auto;
+    height: 50px;
+    
+    border-radius: 5px;
+    margin-bottom: 26px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+
+    z-index:5;
+}
+
+.right {
+    margin: 0 10px 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.right p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.left h3 {
+    margin: 0;
+    display: flex;
+    align-content: space-between;
+}
+
+.smallCircles {
+    font-size: 10px;
+    margin-left: 5px;
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center; 
+    flex-direction: row;
+
+    z-index: 2;
+}
+
+
+.circle {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+
+    margin-right: 6px;
+}
+
+.ready {
+    color: #A7C957;
+}
+
+.notReady {
+    color: #FFC300;
+}
+
+#yellow {
+    background-color: #FFC300;
+    margin-left: auto;
+}
+
+#green {
+    background-color: #A7C957;
+}
+
+
+.semiCircle {
+    background-color: #003773;
+    border-top-left-radius: 100%;
+
+    width: 470px;
+    height: 383px;
+
+    position: absolute;
+    bottom: -78px;
+    left: -46px;
+    
+    z-index: -3;
+}
