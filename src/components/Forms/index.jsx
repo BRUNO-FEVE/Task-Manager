@@ -5,18 +5,15 @@ import './styles.scss';
 class Formulario extends React.Component {
     render () {
         return (
-            <form className="novaTarefa">
+            <form className="formsCard">
+                <div className="topCircle"/>
+                <h1 className="title position">Cronômetro</h1>
+                <h1 className="stopWatch position">00:00:00</h1>
                 <div className="inputContainer">
-                    <label htmlFor="tarefa">
-                        Adicione um novo estudo
-                    </label>
-                    <input type="text" name="tarefa" id="tarefa" placeholder="O que voce quer estudar?" required/>
+                    <input type="text" nome="tarefa" id="tarefa" placeholder="Nome da tarefa: " required/>
                 </div>
                 <div className="inputContainer">
-                    <label htmlFor="tempo">
-                        Tempo 
-                    </label>
-                    <input type="time" step="1" name="tempo" id="tempo" min={"00:00:00"} max="1:30:00" required/>
+                    <input type="text" id="tempo" placeholder="Tempo estimado: " required/>
                 </div>
                 <Button />
             </form>

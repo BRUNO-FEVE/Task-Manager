@@ -4,7 +4,7 @@ import './styles.scss'
 class Button extends React.Component {
     render() {
         return(
-            <button className="button">Botao</button>
+            <button className="button" type="submit">Adicionar</button>
         )
     }
 }

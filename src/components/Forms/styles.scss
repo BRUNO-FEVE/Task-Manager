@@ -1,0 +1,74 @@
+.formsCard {
+    width: 336px;
+    height: 485px;
+    padding: 35px;
+    border-radius: 30px;
+    background-color: #001D3D;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    z-index: 2;
+    
+    overflow: hidden;
+}
+
+.topCircle {
+    background-color: #003773;
+    height: 275px;
+    width: 470px;
+    border-bottom-right-radius: 250px;
+    border-bottom-left-radius: 250px;
+
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.position {
+    z-index: 3;
+}
+
+.title {
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
+}
+
+.stopWatch {
+    font-size: 70px;
+    transform: scale(1,2);
+}
+
+.inputContainer {
+    width: 100%;
+    margin-top: 70px;
+}
+
+#tarefa {
+    font-size: 17px;;
+    background-color: #001D3D;
+    color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+#tempo {
+    font-size: 17px;
+    background-color: #001D3D;
+    color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    
+}
+
+.inputContainer label {
+    margin-top: 1px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}
