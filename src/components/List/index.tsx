@@ -1,5 +1,5 @@
 import React from "react";
-import './styles.scss'
+import style from './List.module.scss'
 
 function Lista () {
     const tarefas = [{
@@ -20,31 +20,31 @@ function Lista () {
         progresso: '100/100',
       }]
     return ( 
-            <aside className="listaTarefas">
+            <aside className={style.listaTarefas}>
                 <h1>Tarefas:</h1>
                 <ul>
                     {tarefas.map((item, index) => (
-                        <li key={index} className="item">
-                            <div className="left">
+                        <li key={index} className={style.item}>
+                            <div className={style.left}>
                                 <h3> {item.tarefa} </h3>
                                 <span> Tempo: {item.tempo} </span>
                             </div>
-                            <div className="right">
+                            <div className={style.right}>
                                 <p>Progresso</p>
                                 <p>{item.progresso}</p>
                             </div>
                         </li>
                     ))}
                 </ul> 
-                <div className="bottom">
-                    <div className="smallCircles">
-                        <div className="circle" id="green"/>
-                        <p className="ready">Atividade Completa</p>
-                        <div className="circle" id="yellow"/>
-                        <p className="notReady">Atividade em Andamento</p>
+                <div className={style.bottom}>
+                    <div className={style.smallCircles}>
+                        <div className={style.circle} id={style.green}/>
+                        <p className={style.ready}>Atividade Completa</p>
+                        <div className={style.circle} id={style.yellow}/>
+                        <p className={style.notReady}>Atividade em Andamento</p>
                     </div>
                 </div>
-                <div className="semiCircle"/>
+                <div className={style.semiCircle}/>
             </aside>
     )
 }

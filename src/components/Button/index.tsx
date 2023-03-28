@@ -1,10 +1,10 @@
 import React from "react";
-import './styles.scss'
+import style from './Button.module.scss'
 
 class Button extends React.Component {
     render() {
         return(
-            <button className="button" type="submit">Adicionar</button>
+            <button className={style.button} type="submit">Adicionar</button>
         )
     }
 }
