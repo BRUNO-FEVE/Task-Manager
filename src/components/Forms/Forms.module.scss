@@ -63,6 +63,10 @@
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
+#timeContainer {
+    margin-top: 80px;
+}
+
 #tempo {
     font-size: 17px;
     background-color: #001D3D;
@@ -70,8 +74,11 @@
     width: 100%;
 
     border: none;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);  
+}
+
+#tempo::-webkit-calendar-picker-indicator{ 
+    filter: invert(1);
 }
 
 .inputContainer label {

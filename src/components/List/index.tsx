@@ -1,26 +1,11 @@
-import React from "react";
+import { ITarefa } from "../types/tarefa";
 import Item from "./item";
 import style from './List.module.scss'
 
-function Lista () {
-    let tarefas = [{
-        tarefa: 'React',
-        tempo: '1:30:00',
-        progresso: '100',
-      }, {
-        tarefa: 'JavaScript',
-        tempo: '1:00:00',
-        progresso: '100',
-      }, {
-        tarefa: 'Typescript',
-        tempo: '2:00:00',
-        progresso: '100',
-      }, ]
+function Lista ({tarefas}: {tarefas: ITarefa[]} ) {
     return ( 
             <aside className={style.listaTarefas}>
-                <h1 onClick={() => {
-                  tarefas = [...tarefas, {tarefa: "Estudar estado", tempo: "01:00:00", progresso: "80"}]
-                }}>Tarefas:</h1>
+                <h1>Tarefas:</h1>
                 <div className={style.field}>
                   <ul>
                       {tarefas.map((item, index) => (
