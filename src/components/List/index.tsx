@@ -26,7 +26,7 @@ function Lista () {
                 <ul>
                     {tarefas.map((item, index) => (
                         <Item {...item} key={index} />
-                    ))}
+                    ))} 
                 </ul> 
                 <div className={style.bottom}>
                     <div className={style.smallCircles}>
