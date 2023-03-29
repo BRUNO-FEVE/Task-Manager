@@ -9,7 +9,7 @@ export default function Item({tarefa, tempo, progresso}: { tarefa: string, tempo
             </div>
             <div className={style.right}>
                 <p>Progresso</p>
-                <p>{progresso}</p>
+                <p>{progresso}/100</p>
             </div>
         </li>
     )
