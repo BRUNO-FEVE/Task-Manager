@@ -1,6 +1,7 @@
+import { ITarefa } from '../../types/tarefa'
 import style from '../List.module.scss'
 
-export default function Item({tarefa, tempo, progresso}: { tarefa: string, tempo: string, progresso: string }) {
+export default function Item({tarefa, tempo, progresso, selecionado, completado, id}: ITarefa) {
     return (
         <li className={style.item}>
             <div className={style.left}>

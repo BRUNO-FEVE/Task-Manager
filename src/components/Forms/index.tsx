@@ -3,6 +3,7 @@ import Button from "../Button";
 import { ITarefa } from "../types/tarefa";
 import style from './Forms.module.scss';
 import StopWacth from "./StopWacth";
+import {v4 as uuidv4} from "uuid"
 
 class Formulario extends React.Component <{
     setTarefas: React.Dispatch<React.SetStateAction<ITarefa[]>>
@@ -10,12 +11,17 @@ class Formulario extends React.Component <{
     state = {
         tarefa: "",
         tempo: "00:00",
-        progresso: "0",
+        progresso: "00",
     }
 
     adicionarTarefa (evento: React.FormEvent<HTMLFormElement>) {
         evento.preventDefault();
-        this.props.setTarefas(tarefasAntigas => [...tarefasAntigas, {...this.state}])
+        this.props.setTarefas(tarefasAntigas => [...tarefasAntigas, {
+            ...this.state, 
+            completado: false,
+            selecionado: false,
+            id: uuidv4()
+            }])
         this.setState({
             tarefa: "",
             tempo: "00:00",
